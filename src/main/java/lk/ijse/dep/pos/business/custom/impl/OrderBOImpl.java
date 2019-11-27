@@ -1,7 +1,7 @@
 package lk.ijse.dep.pos.business.custom.impl;
 
 import lk.ijse.dep.pos.business.custom.OrderBO;
-import lk.ijse.dep.pos.dao.custom.*;
+import lk.ijse.dep.pos.dao.*;
 import lk.ijse.dep.pos.dto.OrderDTO;
 import lk.ijse.dep.pos.dto.OrderDTO2;
 import lk.ijse.dep.pos.dto.OrderDetailDTO;

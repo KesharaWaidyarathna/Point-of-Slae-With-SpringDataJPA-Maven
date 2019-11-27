@@ -1,11 +1,10 @@
-package lk.ijse.dep.pos.dao.custom;
+package lk.ijse.dep.pos.dao;
 
-import lk.ijse.dep.pos.dao.SuperDAO;
 import lk.ijse.dep.pos.entity.CustomEntity;
 
 import java.util.List;
 
-public interface QueryDAO extends SuperDAO {
+public interface QueryDAO {
 
     CustomEntity getOrderInfo(int orderId) throws Exception;
 

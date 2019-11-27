@@ -1,13 +1,11 @@
-package lk.ijse.dep.pos.dao.custom.impl;
+package lk.ijse.dep.pos.dao.impl;
 
-import lk.ijse.dep.pos.dao.custom.QueryDAO;
+import lk.ijse.dep.pos.dao.QueryDAO;
 import lk.ijse.dep.pos.entity.CustomEntity;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
