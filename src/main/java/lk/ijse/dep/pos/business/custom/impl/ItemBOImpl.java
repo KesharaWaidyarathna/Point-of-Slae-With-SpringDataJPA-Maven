@@ -38,7 +38,7 @@ public class ItemBOImpl implements ItemBO {
         if (orderDetailDAO.existsByItemCode(itemCode)){
             throw new AlreadyExistsInOrderException("Item already exists in an order, hence unable to delete");
         }
-         itemDAO.delete(itemCode);
+         itemDAO.deleteById(itemCode);
     }
 
     @Override
@@ -68,7 +68,7 @@ public class ItemBOImpl implements ItemBO {
     @Transactional(readOnly = true)
 
     public ItemDTO findItem(String itemCode) throws Exception {
-        Item item = itemDAO.find(itemCode);
+        Item item = itemDAO.findById(itemCode).get();
         return new ItemDTO(item.getCode(),
                 item.getDescription(),
                 item.getQtyOnHand(),

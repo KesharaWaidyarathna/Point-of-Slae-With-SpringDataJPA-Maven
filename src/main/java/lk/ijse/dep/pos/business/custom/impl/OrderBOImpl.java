@@ -38,14 +38,14 @@ public class OrderBOImpl implements OrderBO {
     @Override
     public void placeOrder(OrderDTO order) throws Exception {
         int oId = order.getId();
-        orderDAO.save(new Order(oId, new java.sql.Date(new Date().getTime()),customerDAO.find(order.getCustomerId())));
+        orderDAO.save(new Order(oId, new java.sql.Date(new Date().getTime()),customerDAO.findById(order.getCustomerId()).get()));
 
         for (OrderDetailDTO orderDetail : order.getOrderDetails()) {
             orderDetailDAO.save(new OrderDetail(oId, orderDetail.getCode(),
                     orderDetail.getQty(), orderDetail.getUnitPrice()));
-            Item item = itemDAO.find(orderDetail.getCode());
+            Item item = itemDAO.findById(orderDetail.getCode()).get();
             item.setQtyOnHand(item.getQtyOnHand() - orderDetail.getQty());
-            itemDAO.update(item);
+            itemDAO.save(item);
         }
     }
 
