@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bean-lk.ijse.dep.pos.report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6013c832-e066-44b2-bca2-94f4d8cbdf17">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="61" uuid="92b23f9a-cc4c-4dfe-8eab-b01419154a10"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="33" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bean Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="30" uuid="f51bda06-1db5-4003-bb7a-98646aee06ed">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="edf877ba-96e5-4c27-9193-78e8fcb84ed6"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="0" width="290" height="30" uuid="b566ed88-3392-4e2c-94b7-d07862df9082">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ffd9aa24-4051-46b6-b52a-f6f79a843594"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="30" uuid="c4d27c0d-41a7-4d4c-9558-a3f36a63974f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fbdc6b4e-a314-4986-a3f1-786ab8196352"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ADDRESS]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="80" height="30" uuid="4c5f4601-f0ae-47ee-8af5-a10ce6b077e0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="edf877ba-96e5-4c27-9193-78e8fcb84ed6"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="290" height="30" uuid="c00e4b30-2d88-4f29-a53d-95d8e74fba9f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ffd9aa24-4051-46b6-b52a-f6f79a843594"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="30" uuid="e66d91df-511e-49e5-9244-98974cd2ac87">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fbdc6b4e-a314-4986-a3f1-786ab8196352"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
