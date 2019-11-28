@@ -22,7 +22,8 @@ Aouthor was build this system using following technologies and frameworks
 
 * Java SE
 * Spring
-* Hibernate JPA
+* Maven
+* JPA
 * JavaFX
 * layered architecture
 
