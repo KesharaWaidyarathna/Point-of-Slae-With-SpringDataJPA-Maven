@@ -31,7 +31,7 @@ public class JPAConfig {
     private Environment env;
 
     @Bean
-    public LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean(DataSource ds, JpaVendorAdapter jpaVendorAdapter){
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource ds, JpaVendorAdapter jpaVendorAdapter){
         LocalContainerEntityManagerFactoryBean lcemf = new LocalContainerEntityManagerFactoryBean();
         lcemf.setDataSource(ds);
         lcemf.setJpaVendorAdapter(jpaVendorAdapter);

@@ -13,6 +13,11 @@ public class CustomEntity implements SuperEntity {
     public CustomEntity() {
     }
 
+    public CustomEntity(java.util.Date orderDate,String customerName) {
+        this.orderDate = new Date(orderDate.getTime());
+        this.customerName = customerName;
+    }
+
     public CustomEntity(int orderId, String customerId, String customerName, Date orderDate) {
         this.orderId = orderId;
         this.customerId = customerId;
