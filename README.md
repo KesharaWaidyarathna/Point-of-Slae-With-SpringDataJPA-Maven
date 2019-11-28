@@ -1,4 +1,4 @@
-# POS system using hibernate <h1>
+# POS system using Spring Data JPA <h1>
 
 This the simple pos system where can use in store. This was developed under the layered architecture.
 This system function only stand alone. And also it's required ver low possessing power and requirements.
